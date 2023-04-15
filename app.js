@@ -8,7 +8,7 @@ let items = [];
 let workItems = [];
 app.set("view engine", "ejs");
 app.get("/", function (req, res) {
-  let day = date.getDay();
+  let day = date.getDate();
   res.render("list", { listTitle: day, newListItems: items });
 });
 app.post("/", function (req, res) {
