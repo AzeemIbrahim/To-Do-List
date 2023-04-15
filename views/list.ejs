@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>To-Do List</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-
-<body>
-    <div class="box" id="heading">
-        <h1 style="color:#000000;">
-            <%= kindofDay %>
-        </h1>
+<%- include("header") -%>
     </div>
     <div class="box">
         <% for(var i=0;i<newListItems.length;i++){ %>
@@ -25,10 +12,7 @@
 
                 <form class="item" action="/" method="post">
                     <input type="text" name="newItem" placeholder="New Item">
-                    <button type="submit" name="button">+</button>
+                    <button type="submit" name="list" value =<%= listTitle %>>+</button>
                 </form>
     </div>
-
-</body>
-
-</html>
+<%- include ("footer") -%>
