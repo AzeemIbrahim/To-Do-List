@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const date = require(__dirname + "/views/date.js");
+const date = require(__dirname + "/viewsgit co/date.js");
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
